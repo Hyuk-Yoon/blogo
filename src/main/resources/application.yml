@@ -22,13 +22,13 @@ spring:
       client:
         registration:
           google:
-            client-id: 412531422125-ovc9fg8gda995ul69hmfg3ds92ngpku9.apps.googleusercontent.com
-            client-secret: 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
+            client-id: test_id
+            client-secret: test_secret
             scope:
               - email
               - profile
 
 jwt:
   issuer: test@email.com
-  secret_key: breaking-springboot
+  secret_key: test_key
 
