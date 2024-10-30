@@ -100,7 +100,7 @@ show tables;]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="awseb-e-z2rwpkhsju-stack-awsebrdsdatabase-3kmfxogrbadx.c9kskywgcn90.ap-northeast-2.rds.amazonaws.com" />
+          <host value="awseb-e-wdxtmqprmn-stack-awsebrdsdatabase-4fusbahpd7ao.c9kskywgcn90.ap-northeast-2.rds.amazonaws.com" />
           <port value="3306" />
           <database value="mysql" />
           <tns-folder value="" />

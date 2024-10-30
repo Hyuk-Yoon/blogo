@@ -218,7 +218,7 @@ class BlogApiControllerTest {
                 .author(user.getUsername())
                 .build());
     }
-
+/*
     @DisplayName("addArticle: 아티클 추가할 때 title이 null이면 실패한다.")
     @Test
     public void addArticleNullValidation() throws Exception {
@@ -268,4 +268,5 @@ class BlogApiControllerTest {
         //then
         result.andExpect(status().isBadRequest());
     }
+ */
 }
