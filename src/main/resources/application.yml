@@ -5,13 +5,25 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
+        dialect: org.hibernate.dialect.MySQLDialect
+    #database-platform: org.hibernate.dialect.MySQLDialect
     #테이블 생성 후에 data.sql 실행
-    defer-datasource-initialization: true
+    #defer-datasource-initialization: true
+
+  #sql:
+    #init:
+      #mode: always
 
   #datasource:
   #  url: jdbc:h2:mem:testdb
   #  username: sa
+
+  datasource:
+    # MySQL
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog
+    username: root
+    password: springboot
 
   h2:
     console:
@@ -22,13 +34,18 @@ spring:
       client:
         registration:
           google:
-            client-id: test_id
-            client-secret: test_secret
+            client-id: 412531422125-ovc9fg8gda995ul69hmfg3ds92ngpku9.apps.googleusercontent.com
+            client-secret: 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
             scope:
               - email
               - profile
+  web:
+    resources:
+      static-locations: classpath:/static/
 
 jwt:
   issuer: test@email.com
   secret_key: test_key
+
+
 
